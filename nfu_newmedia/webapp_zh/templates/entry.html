@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<h2>{{ the_title }}</h2>
+
+<form method='POST' action='/search4'>
+<table>
+<tr><td>英雄：</td><td><input name='phrase' type='TEXT' value='干将莫邪,东皇太一,太乙真人,妲己,程咬金'></td><tr>
+<tr><td>装备：</td><td><input name='letters' type='TEXT' value='神装'></td><tr>
+</table>
+<p>敌军还有5秒到达战场,请做好准备：</p>
+<p><input value='全军出击' type='SUBMIT'></p>
+</form>
+
+{% endblock %}
